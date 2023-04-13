@@ -1,3 +1,4 @@
+{{ config(materialized='ephemeral') }}
 with sandwich as ( select Branch,class,Count,Date,year,Hour,Minute,
 Second  from {{ ref('stg_tim') }} where class='person_sandwicharea' and count>0),
 

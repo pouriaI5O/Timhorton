@@ -1,3 +1,4 @@
+{{ config(materialized='ephemeral') }}
 with coffee as ( select * from {{ ref('int_stg_coffee_daily') }}),
 sandwich as ( select * from {{ ref('int_stg_sandwich_daily') }}),
 final as (

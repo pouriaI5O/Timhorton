@@ -1,7 +1,6 @@
 {{ config(
     materialized='table'
 )}}
-
 with coffee as ( select * from {{ ref('int_stg_coffee_weekly') }}),
 sandwich as ( select * from {{ ref('int_stg_sandwich_weekly') }}),
 final as (
