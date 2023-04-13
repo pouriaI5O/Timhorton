@@ -1,3 +1,4 @@
+{{ config(materialized='ephemeral') }}
 with quantity as (select * from {{ ref('int_stg_tim_quantity')}} ),
 
 weekly as (select * from {{ ref('int_stg_weekly')}}),
