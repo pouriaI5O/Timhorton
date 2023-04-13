@@ -1,3 +1,4 @@
+{{ config(materialized='ephemeral') }}
 with coffee as ( select Branch,class,Count,Date,year,Hour,Minute,
 Second  from {{ ref('stg_tim') }} where class='person_coffeearea' and count>0),
 

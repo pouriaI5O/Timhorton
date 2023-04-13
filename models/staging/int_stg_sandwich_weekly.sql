@@ -1,3 +1,4 @@
+{{ config(materialized='ephemeral') }}
 with stg_weekly as(select branch,shift,
 EXTRACT(WEEK FROM date) as week,year,sum(total_seconds) as total_time,
 avg(person_sandwicharea) as person,

@@ -1,3 +1,4 @@
+{{ config(materialized='ephemeral') }}
 with stg_daily as (select branch,shift,year,
 date,sum(total_seconds) as total_time,
 avg(person_coffeearea) as person ,CASE WHEN shift='PM' then 5 
