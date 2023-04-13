@@ -20,18 +20,7 @@ sources:
             description: timhortons branch. 
             tests:
               - not_null
-      - name: talbot_255
-        description: talbot branch 
-        loaded_at_field: date
-      - name: maidstone_1903
-        description: maidstone branch 
-        loaded_at_field: date
-      - name: erie_185
-        description: erie_185 branch 
-        loaded_at_field: date 
-      - name: erie_250
-        description: erie_250 branch 
-        loaded_at_field: date      
+
         
               
                    
