@@ -11,16 +11,25 @@ sources:
         freshness: 
           warn_after: {count: 12, period: hour}
           error_after: {count: 48, period: hour}
-        columns:
-          - name: timestamps
-            description: Time of detection. 
-            tests:
-              - not_null
-          - name: location
-            description: timhortons branch. 
-            tests:
-              - not_null
-
+      - name: erie_185
+        description: Line170 data
+        loaded_at_field: date
+        freshness: 
+          warn_after: {count: 12, period: hour}
+          error_after: {count: 48, period: hour}
+      - name: erie_250
+        description: Line170 data
+        loaded_at_field: dsate
+        freshness: 
+          warn_after: {count: 12, period: hour}
+          error_after: {count: 48, period: hour}
+      - name: talbot_255
+        description: Line170 data
+        loaded_at_field: date
+        freshness: 
+          warn_after: {count: 12, period: hour}
+          error_after: {count: 48, period: hour}
+              
         
               
                    
