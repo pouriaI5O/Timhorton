@@ -1,2 +1,2 @@
-{{ config(materialized='ephemeral') }}
+{{ config(materialized='table') }}
  select * from  {{ ref('int_weekly_join') }}
